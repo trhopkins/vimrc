@@ -1,4 +1,4 @@
--- Set Options for Neovim
+-- Set options for Neovim
 
 -- works just like set in VimL
 vim.o.number = true
