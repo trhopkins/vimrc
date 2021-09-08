@@ -1,4 +1,10 @@
--- Travis Hopkins
+-- Travis Hopkins neovim configs
+
+-- package management. TODO: move to separate file/module
+require "paq" {
+    "savq/paq-nvim"; -- Let Paq manage itself
+    "neovim/nvim-lspconfig"
+}
 
 -- see oroques.dev/notes/neovim-init/
 
@@ -14,3 +20,4 @@ local function map(mode, lhs, rhs, opts)
 	if opts then options = vim.tbl_extend('force', options, opts) end
 	vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
+
