@@ -2,8 +2,14 @@
 My dotfiles for Neovim.
 
 TODO:
-* [ ] install/configure paq-nvim
-* [ ] install/configure nvim-tree-sitter
-* [ ] install/configure nvim-telescope
-* [ ] install/configure nvim-dap
-* [ ] install/configure synctex
+* [x] configure/install paq-nvim
+* [ ] configure/install nvim-treesitter
+* [ ] configure/install nvim-telescope
+* [ ] configure/install nvim-dap
+* [ ] configure/install vimtex
+* [ ] configure/install snippets.nvim
+* [ ] configure/install completion-nvim
+* [ ] configure Neovim options
+* [ ] add mappings
+* [ ] add language server bindings?
+

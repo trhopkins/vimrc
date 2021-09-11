@@ -10,3 +10,6 @@ vim.g.mapleader = ' '
 
 map('n', '<leader>o', 'm`o<Esc>``') -- add line below
 map('n', '<leader>O', 'm`O<Esc>``') -- add line above
+map('n', 'j', 'gj') -- respect linewraps
+map('n', 'k', 'gk') -- respect linewraps
+

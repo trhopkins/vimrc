@@ -4,3 +4,5 @@
 require('options') -- call options.lua to set editor configuration
 require('plugins') -- load necessary plugins. TODO: add more
 require('mappings') -- load mappings
+require('lsp') -- Language Server Protocol options
+
