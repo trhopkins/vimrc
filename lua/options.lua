@@ -10,5 +10,5 @@ vim.o.relativenumber = true -- show line distance from current
 vim.o.ignorecase     = true -- case-insensitive search
 vim.o.smartcase      = true -- case-sensitive search if any uppercase letters
 vim.o.autoindent     = true -- remain on same indent even if filetype is not specified
---vim.o.backspace    = indent,eol,start -- currently broken due to brain-dumb
+vim.o.backspace      = "indent,eol,start" -- backspace across newlines, indents
 

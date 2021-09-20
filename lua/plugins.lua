@@ -3,7 +3,11 @@ require "paq" {
     "savq/paq-nvim"; -- Let Paq manage itself
     "neovim/nvim-lspconfig";
     "nvim-treesitter/nvim-treesitter";
+    "nvim-lua/completion-nvim";
 }
+
+-- already included in lsp.lua?
+--require'lspconfig'.hls.setup{on_attach=require'completion'.on_attach}
 
 -- TODO: only require larger plugins for related filetypes, ie. lervag/vimtex
 -- for .tex files
@@ -15,3 +19,4 @@ require "paq" {
 -- completion-nvim
 -- deoplete
 -- nvim-dap
+-- ag as search replacement?
