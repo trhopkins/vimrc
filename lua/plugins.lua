@@ -4,6 +4,11 @@ require "paq" {
     "neovim/nvim-lspconfig";
     "nvim-treesitter/nvim-treesitter";
     "nvim-lua/completion-nvim";
+    --"blackCauldron7/surround.nvim";
+    "tpope/vim-surround";
+    "tpope/vim-repeat";
+    "jiangmiao/auto-pairs";
+    "lervag/vimtex"
 }
 
 -- already included in lsp.lua?
@@ -20,3 +25,4 @@ require "paq" {
 -- deoplete
 -- nvim-dap
 -- ag as search replacement?
+

@@ -11,4 +11,5 @@ vim.o.ignorecase     = true -- case-insensitive search
 vim.o.smartcase      = true -- case-sensitive search if any uppercase letters
 vim.o.autoindent     = true -- remain on same indent even if filetype is not specified
 vim.o.backspace      = "indent,eol,start" -- backspace across newlines, indents
+vim.o.hlsearch       = false -- prevent highlighting searches outside of / or ?
 
