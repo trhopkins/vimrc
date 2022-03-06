@@ -2,9 +2,10 @@
 -- Source lua/init.lua
 
 require('options') -- set editor configuration
-require('mappings') -- load mappings
+require('mappings') -- load keymaps
 require('lsp') -- Language Server Protocol
 require('treesitter') -- highlighting and syntax-edits
+require('snippets') -- shortcuts for editing
 
 -- consider XDG_DATA_HOME ($HOME/.local/share)?
 paqLocation = os.getenv('HOME') .. '/.local/share/nvim/site/pack/paqs/start/paq-nvim'
