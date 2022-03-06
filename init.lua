@@ -13,3 +13,4 @@ if os.execute('[ -d' .. paqLocation .. ' ]') == 0 then -- check if savq/paq-nvim
 	require('plugins') -- load necessary plugins. TODO: add more
 end
 
+print "Hello world!"

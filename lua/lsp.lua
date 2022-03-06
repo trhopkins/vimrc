@@ -10,9 +10,9 @@ require'lspconfig'.jdtls.setup { -- Java (Eclipse jdtls)
 	end
 }
 
---require'lspconfig'.ccls.setup {} -- C, C++, C#
+--require'lspconfig'.ccls.setup {} -- C, C++
 
-require'lspconfig'.ccls.setup {
+require'lspconfig'.ccls.setup { -- C, C++
 	cmd = { "ccls" },
 	filetypes = { "c", "cpp" },
 	init_options = {

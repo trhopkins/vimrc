@@ -1,10 +1,14 @@
 -- Set options for Neovim
 
--- environmental variables
+-- environmental variables?
 --local home = vim.env.HOME -- ~
 --local config = vim.env.XDG_CONFIG_HOME -- assumes .profile and XDG are set up correctly
 
+vim.cmd('filetype indent plugin on') -- must come after plugins are loaded
+vim.cmd('syntax on') -- enable basic syntax options. Mostly overruled by treesitter
+
 -- works just like set in VimL
+vim.o.filetype       = true -- detect filetypes???
 vim.g.nocompatible   = true -- no vi compatibility
 vim.o.hidden         = true -- switch from unsaved files easier
 vim.o.wildmenu       = true -- better completion features
@@ -23,4 +27,3 @@ vim.o.belloff        = "all" -- never ring the bell
 vim.o.lazyredraw     = true -- don't redraw the screen during macro playback
 vim.o.clipboard      = 'unnamedplus' -- let xclip provide clipboard register
 --vim.o.cursorline     = true -- underlines current line. Remove maybe?
-
