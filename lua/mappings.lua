@@ -12,6 +12,7 @@ vim.g.mapleader = ' ' -- leader key for user-created "mode"
 -- TODO: mapping that sources all of these files in one go?
 map('n', '<leader><leader>i', ':luafile $MYVIMRC<cr>') -- source init file
 map('n', '<leader><leader>m', ':luafile $XDG_CONFIG_HOME/nvim/lua/mappings.lua<cr>')   -- source keymaps
+map('n', '<leader><leader>c', ':luafile $XDG_CONFIG_HOME/nvim/lua/completion.lua<cr>')   -- source completion engine
 map('n', '<leader><leader>s', ':luafile $XDG_CONFIG_HOME/nvim/lua/snippets.lua<cr>')   -- source snippets
 map('n', '<leader><leader>o', ':luafile $XDG_CONFIG_HOME/nvim/lua/options.lua<cr>')    -- source options
 map('n', '<leader><leader>p', ':luafile $XDG_CONFIG_HOME/nvim/lua/plugins.lua<cr>')    -- source plugins
@@ -20,6 +21,7 @@ map('n', '<leader><leader>t', ':luafile $XDG_CONFIG_HOME/nvim/lua/treesitter.lua
 map('n', '<leader><leader>?', ':!ls $XDG_CONFIG_HOME/nvim/lua/<cr>')                   -- show nvim settings directory
 
 map('n', '<leader><leader>I', ':e $MYVIMRC<cr>') -- source init file
+map('n', '<leader><leader>C', ':e $XDG_CONFIG_HOME/nvim/lua/completion.lua<cr>')   -- edit completion engine
 map('n', '<leader><leader>M', ':e $XDG_CONFIG_HOME/nvim/lua/mappings.lua<cr>')   -- edit keymaps
 map('n', '<leader><leader>S', ':e $XDG_CONFIG_HOME/nvim/lua/snippets.lua<cr>')   -- edit snippets
 map('n', '<leader><leader>O', ':e $XDG_CONFIG_HOME/nvim/lua/options.lua<cr>')    -- edit options
