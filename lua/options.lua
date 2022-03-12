@@ -6,6 +6,7 @@
 
 vim.cmd('filetype indent plugin on') -- must come after plugins are loaded
 vim.cmd('syntax on') -- enable basic syntax options. Mostly overruled by treesitter
+--vim.cmd('set completeopt=menu,menuone,noselect') -- not certain if this matters actually
 
 -- works just like set in VimL
 vim.o.filetype       = true -- detect filetypes???
@@ -27,7 +28,5 @@ vim.o.belloff        = "all" -- never ring the bell
 vim.o.lazyredraw     = true -- don't redraw the screen during macro playback
 vim.o.clipboard      = 'unnamedplus' -- let xclip provide clipboard register
 vim.o.mouse          = 'a' -- enable mouse
-vim.o.completeopt = 'menu,menuone,noselect' -- activate menu even if nvim-cmp exists
---vim.o.completeopt = vim.o.completeopt + 'menuone' -- activate menu despite only one candidate (nvim-cmp)
---vim.o.completeopt = vim.o.completeopt + 'noselect' -- don't auto-select with nvim-cmp yet???
---vim.o.cursorline     = true -- underlines current line. Remove maybe?
+vim.o.completeopt    = 'menu,menuone,noselect' -- activate menu even if nvim-cmp exists. Sometimes breaks things?
+

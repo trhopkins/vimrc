@@ -38,14 +38,6 @@ map('n', 'k', 'gk') -- respect linewraps. Messes with repeats across linewraps?
 map('n', '<leader>m', ':w<cr>:!gcc %<cr>:!./a.out<cr>') -- save, run, and compile a c program
 map('n', '<leader>M', ':w<cr>:!g++ %<cr>:!./a.out<cr>') -- save, run, and compile a c++ program
 
---[[
--- C/C++ specific bindings. Consider managing snippets this way also?
-if (vim.bo.filetype == 'lua') then
-	map('n', '<leader>m', ':w<cr>:!gcc %<cr>:!./a.out<cr>') -- save, run, and compile a c program
-	map('n', '<leader>M', ':w<cr>:!g++ %<cr>:!./a.out<cr>') -- save, run, and compile a c++ program
-end
---]]
-
 -- jump between windows quickly
 map('n', '<C-h>', '<C-w>h') -- go left
 map('n', '<C-j>', '<C-w>j') -- go down
