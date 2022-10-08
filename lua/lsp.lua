@@ -28,3 +28,5 @@ require'lspconfig'.ccls.setup { -- C, C++
 
 require'lspconfig'.racket_langserver.setup {} -- Racket
 
+require'lspconfig'.ocamllsp.setup {} -- OCaml
+

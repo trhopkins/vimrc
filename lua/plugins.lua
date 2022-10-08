@@ -1,4 +1,4 @@
-return require('packer').startup(function()
+return require('packer').startup(function(use)
 	use "wbthomason/packer.nvim"   -- let Paq manage itself
 	use "neovim/nvim-lspconfig"    -- language server integration
 	use "nvim-treesitter/nvim-treesitter" -- syntax highlighting
